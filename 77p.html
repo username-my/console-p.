@@ -1,0 +1,148 @@
+<html lang=en>
+<head>
+	<title>
+		Project 77.
+	</title>
+</head>
+
+<style>
+	body {
+		background-color: black;
+
+		align-items: center;
+	}
+
+	h1 {
+		color: darkorange;
+		margin-left: 20em;
+
+	}
+
+	.bdy {
+		text-align: center;
+		background-color: darkgray;
+		border-radius: 20px 5px 20px 5px;
+		border-width: 60px;
+		border-color: lawngreen;
+		width: 600px;
+		height: 500px;
+		padding: 2em;
+		margin-left: 25em;
+	}
+
+	.names {
+
+		margin-top: 12em;
+
+	}
+
+	input {
+
+		border-radius: 20px 2px 20px 2px;
+		color: seagreen;
+		width: 200px;
+		height: 40px;
+		font-size: 20px;
+
+	}
+
+	label {
+
+		font-size: 20px;
+
+	}
+
+	#btnconsole {
+
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		border-radius: 20px 2px 20px 2px;
+
+	}
+
+	#btnconsole:hover {
+
+		background: rgb(238, 177, 10);
+		width: 45px;
+		height: 45px;
+		color: springgreen;
+	}
+
+	#btnaddition {
+
+		width: 50px;
+		height: 40px;
+		cursor: pointer;
+		border-radius: 20px 2px 20px 2px;
+
+	}
+
+	#btnaddition:hover {
+
+		background: rgb(238, 25, 10);
+		width: 55px;
+		height: 45px;
+		color: rgb(0, 204, 255);
+	}
+</style>
+
+<body>
+	<h1>Project 77.</h1>
+	<div class="bdy">
+		<div class="names">
+			<input type="text" placeholder="First Name...." id="fin" />
+			<input type="text" placeholder="Second Name...." id="sn" />
+			<button id="btnconsole" onclick="buttobconsole()">OK.</button>
+			<label id="lfn"></label>
+			<br>
+
+		</div>
+		<br>
+		<div class="nos">
+			<input type="text" placeholder="First no....." id="fno" />
+			<input type="text" placeholder="Second no....." id="sno" />
+			<button id="btnadd" onclick="nobutton()">Ok.</button>
+			<br>
+
+
+		</div>
+	</div>
+	<script>
+		console.log("Project 77 .");
+
+		function buttobconsole() {
+			var first_name ="Udaya ";
+
+			var last_name ="Ch. Sutar";
+
+
+			var full_name = first_name.concat(last_name);
+
+			console.log(full_name);
+		}
+
+		function nobutton() {
+
+
+			var a = Number(document.getElementById("fno").value);
+			var b = Number(document.getElementById("sno").value);
+
+			var add = a + b;
+			console.log(add);
+
+
+			var sub = a - b;
+			console.log(sub);
+
+
+			var multiple = a * b;
+			console.log(multiple);
+
+
+			var divide = a / b;
+			console.log(divide);
+
+		}
+	</script>
+</body></html>
